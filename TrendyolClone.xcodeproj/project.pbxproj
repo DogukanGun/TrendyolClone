@@ -9,13 +9,24 @@
 /* Begin PBXBuildFile section */
 		9E0133542773BD8900C5A816 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0133532773BD8900C5A816 /* AppDelegate.swift */; };
 		9E0133562773BD8900C5A816 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0133552773BD8900C5A816 /* SceneDelegate.swift */; };
-		9E0133582773BD8900C5A816 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0133572773BD8900C5A816 /* ViewController.swift */; };
 		9E01335B2773BD8900C5A816 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E0133592773BD8900C5A816 /* Main.storyboard */; };
 		9E01335D2773BD8B00C5A816 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E01335C2773BD8B00C5A816 /* Assets.xcassets */; };
 		9E0133602773BD8B00C5A816 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E01335E2773BD8B00C5A816 /* LaunchScreen.storyboard */; };
 		9E01336B2773BD8B00C5A816 /* TrendyolCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E01336A2773BD8B00C5A816 /* TrendyolCloneTests.swift */; };
 		9E0133752773BD8B00C5A816 /* TrendyolCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0133742773BD8B00C5A816 /* TrendyolCloneUITests.swift */; };
 		9E0133772773BD8B00C5A816 /* TrendyolCloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0133762773BD8B00C5A816 /* TrendyolCloneUITestsLaunchTests.swift */; };
+		9E0133882773BEF100C5A816 /* SalesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0133872773BEF100C5A816 /* SalesVC.swift */; };
+		9E0133922773C04C00C5A816 /* SalesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0133902773C04C00C5A816 /* SalesTableViewCell.swift */; };
+		9E0133932773C04C00C5A816 /* SalesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E0133912773C04C00C5A816 /* SalesTableViewCell.xib */; };
+		9E0133982773C1A100C5A816 /* Sales.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0133972773C1A100C5A816 /* Sales.swift */; };
+		9E01339A2773CAAB00C5A816 /* MyAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0133992773CAAA00C5A816 /* MyAccountVC.swift */; };
+		9E01339E2773CE0500C5A816 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E01339C2773CE0500C5A816 /* AccountTableViewCell.swift */; };
+		9E01339F2773CE0500C5A816 /* AccountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E01339D2773CE0500C5A816 /* AccountTableViewCell.xib */; };
+		9E0133A22773D01400C5A816 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0133A12773D01400C5A816 /* Account.swift */; };
+		9E0133A42773D7EB00C5A816 /* SelfServiceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0133A32773D7EA00C5A816 /* SelfServiceVC.swift */; };
+		9E0133A72773D87500C5A816 /* SelfService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0133A62773D87500C5A816 /* SelfService.swift */; };
+		9E0133AC2773DA9A00C5A816 /* SelfServiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0133AA2773DA9A00C5A816 /* SelfServiceCollectionViewCell.swift */; };
+		9E0133AD2773DA9A00C5A816 /* SelfServiceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E0133AB2773DA9A00C5A816 /* SelfServiceCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +50,6 @@
 		9E0133502773BD8900C5A816 /* TrendyolClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrendyolClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E0133532773BD8900C5A816 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E0133552773BD8900C5A816 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9E0133572773BD8900C5A816 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9E01335A2773BD8900C5A816 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E01335C2773BD8B00C5A816 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E01335F2773BD8B00C5A816 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +59,18 @@
 		9E0133702773BD8B00C5A816 /* TrendyolCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrendyolCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E0133742773BD8B00C5A816 /* TrendyolCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendyolCloneUITests.swift; sourceTree = "<group>"; };
 		9E0133762773BD8B00C5A816 /* TrendyolCloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendyolCloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9E0133872773BEF100C5A816 /* SalesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesVC.swift; sourceTree = "<group>"; };
+		9E0133902773C04C00C5A816 /* SalesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesTableViewCell.swift; sourceTree = "<group>"; };
+		9E0133912773C04C00C5A816 /* SalesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SalesTableViewCell.xib; sourceTree = "<group>"; };
+		9E0133972773C1A100C5A816 /* Sales.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sales.swift; sourceTree = "<group>"; };
+		9E0133992773CAAA00C5A816 /* MyAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountVC.swift; sourceTree = "<group>"; };
+		9E01339C2773CE0500C5A816 /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
+		9E01339D2773CE0500C5A816 /* AccountTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountTableViewCell.xib; sourceTree = "<group>"; };
+		9E0133A12773D01400C5A816 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		9E0133A32773D7EA00C5A816 /* SelfServiceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfServiceVC.swift; sourceTree = "<group>"; };
+		9E0133A62773D87500C5A816 /* SelfService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfService.swift; sourceTree = "<group>"; };
+		9E0133AA2773DA9A00C5A816 /* SelfServiceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfServiceCollectionViewCell.swift; sourceTree = "<group>"; };
+		9E0133AB2773DA9A00C5A816 /* SelfServiceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelfServiceCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +121,11 @@
 		9E0133522773BD8900C5A816 /* TrendyolClone */ = {
 			isa = PBXGroup;
 			children = (
+				9E0133942773C17800C5A816 /* Model */,
+				9E0133892773C00E00C5A816 /* Cell */,
+				9E0133832773BEB100C5A816 /* Controller */,
 				9E0133532773BD8900C5A816 /* AppDelegate.swift */,
 				9E0133552773BD8900C5A816 /* SceneDelegate.swift */,
-				9E0133572773BD8900C5A816 /* ViewController.swift */,
 				9E0133592773BD8900C5A816 /* Main.storyboard */,
 				9E01335C2773BD8B00C5A816 /* Assets.xcassets */,
 				9E01335E2773BD8B00C5A816 /* LaunchScreen.storyboard */,
@@ -125,6 +149,135 @@
 				9E0133762773BD8B00C5A816 /* TrendyolCloneUITestsLaunchTests.swift */,
 			);
 			path = TrendyolCloneUITests;
+			sourceTree = "<group>";
+		};
+		9E0133832773BEB100C5A816 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9E0133862773BECC00C5A816 /* Account */,
+				9E0133852773BEC600C5A816 /* SelfService */,
+				9E0133842773BEBA00C5A816 /* Mainpage */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9E0133842773BEBA00C5A816 /* Mainpage */ = {
+			isa = PBXGroup;
+			children = (
+				9E0133872773BEF100C5A816 /* SalesVC.swift */,
+			);
+			path = Mainpage;
+			sourceTree = "<group>";
+		};
+		9E0133852773BEC600C5A816 /* SelfService */ = {
+			isa = PBXGroup;
+			children = (
+				9E0133A32773D7EA00C5A816 /* SelfServiceVC.swift */,
+			);
+			path = SelfService;
+			sourceTree = "<group>";
+		};
+		9E0133862773BECC00C5A816 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				9E0133992773CAAA00C5A816 /* MyAccountVC.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		9E0133892773C00E00C5A816 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9E0133A92773DA5C00C5A816 /* SelfService */,
+				9E01339B2773CDBC00C5A816 /* Account */,
+				9E01338A2773C01400C5A816 /* Mainpage */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		9E01338A2773C01400C5A816 /* Mainpage */ = {
+			isa = PBXGroup;
+			children = (
+				9E01338B2773C01A00C5A816 /* Sales */,
+			);
+			path = Mainpage;
+			sourceTree = "<group>";
+		};
+		9E01338B2773C01A00C5A816 /* Sales */ = {
+			isa = PBXGroup;
+			children = (
+				9E0133902773C04C00C5A816 /* SalesTableViewCell.swift */,
+				9E0133912773C04C00C5A816 /* SalesTableViewCell.xib */,
+			);
+			path = Sales;
+			sourceTree = "<group>";
+		};
+		9E0133942773C17800C5A816 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9E0133A52773D86B00C5A816 /* SelfService */,
+				9E0133A02773D00800C5A816 /* Account */,
+				9E0133952773C17C00C5A816 /* Mainpage */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9E0133952773C17C00C5A816 /* Mainpage */ = {
+			isa = PBXGroup;
+			children = (
+				9E0133972773C1A100C5A816 /* Sales.swift */,
+			);
+			path = Mainpage;
+			sourceTree = "<group>";
+		};
+		9E01339B2773CDBC00C5A816 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				9E01339C2773CE0500C5A816 /* AccountTableViewCell.swift */,
+				9E01339D2773CE0500C5A816 /* AccountTableViewCell.xib */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		9E0133A02773D00800C5A816 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				9E0133A12773D01400C5A816 /* Account.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		9E0133A52773D86B00C5A816 /* SelfService */ = {
+			isa = PBXGroup;
+			children = (
+				9E0133A62773D87500C5A816 /* SelfService.swift */,
+			);
+			path = SelfService;
+			sourceTree = "<group>";
+		};
+		9E0133A92773DA5C00C5A816 /* SelfService */ = {
+			isa = PBXGroup;
+			children = (
+				9E0133AF2773DF0800C5A816 /* SubItem */,
+				9E0133AE2773DEF900C5A816 /* MainItem */,
+				9E0133AA2773DA9A00C5A816 /* SelfServiceCollectionViewCell.swift */,
+				9E0133AB2773DA9A00C5A816 /* SelfServiceCollectionViewCell.xib */,
+			);
+			path = SelfService;
+			sourceTree = "<group>";
+		};
+		9E0133AE2773DEF900C5A816 /* MainItem */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainItem;
+			sourceTree = "<group>";
+		};
+		9E0133AF2773DF0800C5A816 /* SubItem */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SubItem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +385,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E0133602773BD8B00C5A816 /* LaunchScreen.storyboard in Resources */,
+				9E01339F2773CE0500C5A816 /* AccountTableViewCell.xib in Resources */,
 				9E01335D2773BD8B00C5A816 /* Assets.xcassets in Resources */,
+				9E0133932773C04C00C5A816 /* SalesTableViewCell.xib in Resources */,
+				9E0133AD2773DA9A00C5A816 /* SelfServiceCollectionViewCell.xib in Resources */,
 				9E01335B2773BD8900C5A816 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,9 +414,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E0133582773BD8900C5A816 /* ViewController.swift in Sources */,
+				9E0133982773C1A100C5A816 /* Sales.swift in Sources */,
+				9E0133882773BEF100C5A816 /* SalesVC.swift in Sources */,
+				9E01339A2773CAAB00C5A816 /* MyAccountVC.swift in Sources */,
 				9E0133542773BD8900C5A816 /* AppDelegate.swift in Sources */,
+				9E01339E2773CE0500C5A816 /* AccountTableViewCell.swift in Sources */,
+				9E0133A22773D01400C5A816 /* Account.swift in Sources */,
+				9E0133922773C04C00C5A816 /* SalesTableViewCell.swift in Sources */,
+				9E0133A42773D7EB00C5A816 /* SelfServiceVC.swift in Sources */,
 				9E0133562773BD8900C5A816 /* SceneDelegate.swift in Sources */,
+				9E0133AC2773DA9A00C5A816 /* SelfServiceCollectionViewCell.swift in Sources */,
+				9E0133A72773D87500C5A816 /* SelfService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
