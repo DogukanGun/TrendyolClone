@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 struct SelfServiceVariable{
+    static let toSelfServicePlaceVC = "SelfServicePlaceVC"
     static let cellNibName = "SelfServiceCollectionViewCell"
     static let cellIdentifier = "SelfServiceCollectionViewCell"
     static let cornerRadious = CGFloat(10)
@@ -78,6 +79,9 @@ extension SelfServiceVC:UICollectionViewDelegate,UICollectionViewDataSource{
         cell.serviceImage.layer.cornerRadius = SelfServiceVariable.cornerRadious
         
         return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: SelfServiceVariable.toSelfServicePlaceVC, sender: nil)
     }
 }
 
