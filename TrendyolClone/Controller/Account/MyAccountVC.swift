@@ -20,13 +20,20 @@ class MyAccountVC:UIViewController{
     var accounts = [Account]()
     private let accountMenuName = ["Siparişlerim","Tekrar Satın Al","Önceden Gezindiklerim","Vodafone TL /Paket Yükle","Dijital Servisler Siparişlerim","Mesajlarım","Takip Ettiğim Mağazalar","Trendyol Elite","Hesap Bilgilerim","Yardım","Değerlendirmelerim"]
     
-    override func viewDidLoad() {
+    override func viewDidLoad() { 
+        delegateTableView()
+        createMockData()
+    }
+     
+}
+//delegation and mock data
+extension MyAccountVC{
+    
+    private func delegateTableView(){
         accountTableView.delegate = self
         accountTableView.dataSource = self
         accountTableView.register(UINib(nibName: MyAccountVariable.cellNibName, bundle: nil), forCellReuseIdentifier: MyAccountVariable.cellIdentifier)
-        createMockData()
     }
-    
     private func createMockData(){
         for i in accountMenuName{
             let isNew = randomNew()
@@ -39,10 +46,7 @@ class MyAccountVC:UIViewController{
         let random = Int.random(in: 0..<2)
         return random == 0 ? true : false
     }
-    
-    
 }
-
 
 extension MyAccountVC:UITableViewDelegate,UITableViewDataSource{
     

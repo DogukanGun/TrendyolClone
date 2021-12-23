@@ -34,6 +34,10 @@ class SelfServiceVC:UIViewController{
         createMockData()
     }
     
+    
+}
+//delegation and mock data
+extension SelfServiceVC{
     private func createCollectionView(){
         selfServiceCollectionView.register(UINib(nibName: SelfServiceVariable.cellNibName, bundle: nil), forCellWithReuseIdentifier: SelfServiceVariable.cellIdentifier)
         selfServiceCollectionView.delegate = self
@@ -59,6 +63,7 @@ class SelfServiceVC:UIViewController{
     }
 }
 
+//collection view
 extension SelfServiceVC:UICollectionViewDelegate,UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return selfServices.count
@@ -76,6 +81,7 @@ extension SelfServiceVC:UICollectionViewDelegate,UICollectionViewDataSource{
     }
 }
 
+//collection view flow layout
 extension SelfServiceVC:UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

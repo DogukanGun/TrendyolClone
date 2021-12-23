@@ -12,6 +12,7 @@ struct SalesVariable{
     static let cellNibName = "SalesTableViewCell"
     static let cellIdentifier = "SalesTableViewCell"
     static let buttonSize = CGFloat(55)
+    static let toProductsVC = "ProductsVC"
 }
 class SalesVC:UIViewController{
     @IBOutlet weak var salesTableView: UITableView!
@@ -21,12 +22,43 @@ class SalesVC:UIViewController{
     private lazy var searchBar:UISearchBar = UISearchBar(frame: CGRect(x: 0, y: 0, width: view.frame.width-SalesVariable.buttonSize*1.5,height: 20 ))
 
     override func viewDidLoad() {
-        salesTableView.register(UINib(nibName: SalesVariable.cellNibName, bundle: nil), forCellReuseIdentifier: SalesVariable.cellIdentifier)
-        salesTableView.delegate = self
-        salesTableView.dataSource = self
+        delegateCollectionView()
         createSearchBar()
         createNotificationButton()
         createMockData()
+    }
+    
+}
+
+//table view
+extension SalesVC:UITableViewDelegate,UITableViewDataSource{
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: SalesVariable.cellIdentifier, for: indexPath) as! SalesTableViewCell
+        
+        let item = sales[indexPath.row]
+        cell.refresh(sale: item)
+        cell.selectionStyle = .none
+        return cell
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return sales.count
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if(indexPath.row != 0){
+            performSegue(withIdentifier: SalesVariable.toProductsVC, sender: ProductCellType.ProductCell)
+        }else{
+            performSegue(withIdentifier: SalesVariable.toProductsVC, sender: ProductCellType.SaleCell)
+        }
+        tableView.deselectRow(at: indexPath, animated: false)
+    }
+}
+
+// delegation and mock data
+extension SalesVC{
+    private func delegateCollectionView(){
+        salesTableView.register(UINib(nibName: SalesVariable.cellNibName, bundle: nil), forCellReuseIdentifier: SalesVariable.cellIdentifier)
+        salesTableView.delegate = self
+        salesTableView.dataSource = self
     }
     private func createMockData(){
         for i in 1...9{
@@ -35,6 +67,7 @@ class SalesVC:UIViewController{
         }
         
     }
+    
     private func createNotificationButton(){
         let button = UIButton(type: .custom)
         button.frame = CGRect(x: 160, y: 100, width: SalesVariable.buttonSize, height: SalesVariable.buttonSize)
@@ -56,16 +89,13 @@ class SalesVC:UIViewController{
     }
 }
 
-
-extension SalesVC:UITableViewDelegate,UITableViewDataSource{
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: SalesVariable.cellIdentifier, for: indexPath) as! SalesTableViewCell
-        
-        let item = sales[indexPath.row] as! Sale
-        cell.refresh(sale: item)
-        return cell
-    }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return sales.count
+//segue
+extension SalesVC{
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == SalesVariable.toProductsVC{
+            let cellType = sender as! ProductCellType
+            let vc = segue.destination as! ProductsVC
+            vc.cellType = cellType
+        }
     }
 }
