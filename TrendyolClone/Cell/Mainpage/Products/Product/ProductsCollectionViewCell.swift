@@ -14,6 +14,8 @@ class ProductsCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var productPrice: UILabel!
     @IBOutlet weak var addBasketButton: UIButton!
     
+    var product:Product?
+    var cellDelegate:ProductsVCCellDelegate?
     var likeButtonFlag = false
     
     override func awakeFromNib() {
@@ -38,12 +40,15 @@ class ProductsCollectionViewCell: UICollectionViewCell {
     }
     
     @IBAction func addBasketPressed(_ sender: Any) {
-        
+        if let product = product {
+            cellDelegate?.productVCCellDelegate(product)
+        }
     }
     
     
     func refresh(product:Product){
         if let productImageName = product.productImageName, let price = product.productPrice, let name = product.productName, let image = UIImage(named: productImageName){
+            self.product = product
             productImage.image = image
             productName.text = name
             productPrice.text = price

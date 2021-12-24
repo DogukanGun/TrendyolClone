@@ -27,6 +27,10 @@ struct ProductsVariable{
     static let itemPerRow = CGFloat(2)
     static let rowInstest = UIEdgeInsets(top: itemSpace, left: itemSpace, bottom: itemSpace*2, right: itemSpace)
 }
+
+protocol ProductsVCCellDelegate{
+    func productVCCellDelegate(_ item:Product)
+}
 //init variables
 class ProductsVC:UIViewController{
     
@@ -112,6 +116,7 @@ extension ProductsVC:UICollectionViewDelegate,UICollectionViewDataSource{
                 cell.refresh(product: item)
                 cell.layer.borderColor = ProductsVariable.borderColor
                 cell.layer.borderWidth = ProductsVariable.borderWidth
+                cell.cellDelegate = self
                 return cell
             }else{
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ProductsVariable.ProductSaleCell.cellIdentifier, for: indexPath) as! ProductSaleCollectionViewCell
@@ -126,4 +131,20 @@ extension ProductsVC:UICollectionViewDelegate,UICollectionViewDataSource{
         
     }
      
+}
+
+
+extension ProductsVC:ProductsVCCellDelegate{
+    func productVCCellDelegate(_ item: Product) {
+        if let itemName = item.productName{
+            let alert = UIAlertController(title: "Başarılı", message: "\(itemName) isimli sipariş başarıyla sepete eklendi", preferredStyle: .alert)
+            
+            let action = UIAlertAction(title: "Tamam", style: .cancel, handler: nil)
+            
+            alert.addAction(action)
+            self.present(alert, animated: true, completion: nil)
+        }
+        
+        
+    }
 }
