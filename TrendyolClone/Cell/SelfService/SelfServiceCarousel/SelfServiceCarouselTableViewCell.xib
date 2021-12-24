@@ -17,9 +17,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="441" height="161"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="uTM-ZL-hQz">
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="uTM-ZL-hQz">
                         <rect key="frame" x="0.0" y="0.0" width="441" height="161"/>
-                        <color key="backgroundColor" systemColor="systemGray3Color"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="I0H-2E-iMn">
                             <size key="itemSize" width="500" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -27,26 +26,36 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                     </collectionView>
-                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="SOD-51-j6b">
-                        <rect key="frame" x="0.0" y="67" width="441" height="26"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="SOD-51-j6b">
+                        <rect key="frame" x="0.0" y="86" width="441" height="70"/>
+                        <color key="pageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="currentPageIndicatorTintColor" systemColor="labelColor"/>
                     </pageControl>
                 </subviews>
                 <constraints>
                     <constraint firstItem="uTM-ZL-hQz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="1Lk-r6-Gus"/>
                     <constraint firstItem="uTM-ZL-hQz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ERl-Xa-KRf"/>
+                    <constraint firstAttribute="bottom" secondItem="SOD-51-j6b" secondAttribute="bottom" constant="5" id="aDc-lL-DEN"/>
+                    <constraint firstItem="SOD-51-j6b" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="75" id="amD-VA-Aae"/>
+                    <constraint firstItem="SOD-51-j6b" firstAttribute="trailing" secondItem="uTM-ZL-hQz" secondAttribute="trailing" id="gFP-k8-ZdZ"/>
                     <constraint firstAttribute="bottom" secondItem="uTM-ZL-hQz" secondAttribute="bottom" id="jqx-9s-SjU"/>
                     <constraint firstAttribute="trailing" secondItem="uTM-ZL-hQz" secondAttribute="trailing" id="jwv-uu-NvS"/>
+                    <constraint firstItem="SOD-51-j6b" firstAttribute="leading" secondItem="uTM-ZL-hQz" secondAttribute="leading" id="nQa-lh-VAm"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" systemColor="systemGray3Color"/>
             <connections>
+                <outlet property="pageControl" destination="SOD-51-j6b" id="w7d-Cq-3EX"/>
                 <outlet property="selfServiceCarousel" destination="uTM-ZL-hQz" id="uOS-En-DtU"/>
             </connections>
             <point key="canvasLocation" x="189.13043478260872" y="107.47767857142857"/>
         </tableViewCell>
     </objects>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGray3Color">
             <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6fL-0c-VSL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gu2-O5-XXr">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -46,7 +46,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1839.1304347826087" y="70.982142857142847"/>
+            <point key="canvasLocation" x="2749.275362318841" y="70.982142857142847"/>
         </scene>
         <!--Self Service PlaceVC-->
         <scene sceneID="oaX-pa-4Dh">
@@ -104,30 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VlI-kk-c9j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2888" y="71"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="WwJ-kn-0RM">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="6fL-0c-VSL" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yxz-WN-ir0">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" systemColor="systemOrangeColor"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="mUU-xx-ean" kind="relationship" relationship="viewControllers" id="U6J-99-QlO"/>
-                        <segue destination="pzp-pa-A0J" kind="relationship" relationship="viewControllers" id="hYE-Kc-qpa"/>
-                        <segue destination="dde-xy-ouB" kind="relationship" relationship="viewControllers" id="npa-KH-b3f"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eW1-Cd-yle" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="70.982142857142847"/>
+            <point key="canvasLocation" x="3797.1014492753625" y="70.982142857142847"/>
         </scene>
         <!--SalesVC-->
         <scene sceneID="SWu-jM-0DM">
@@ -203,7 +180,9 @@
         <scene sceneID="opw-Ct-ylL">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mUU-xx-ean" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Hemen Gelsin" selectedImage="pencil.slash" catalog="system" id="DjB-S3-TIV"/>
+                    <tabBarItem key="tabBarItem" title="Hemen Gelsin" image="trendyolGoBg" id="DjB-S3-TIV">
+                        <imageReference key="selectedImage" image="trendyolGoBg" renderingMode="template"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PNZ-e3-XHg">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -216,7 +195,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dSt-3E-ywg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928.98550724637687" y="70.982142857142847"/>
+            <point key="canvasLocation" x="1839.1304347826087" y="70.982142857142847"/>
         </scene>
         <!--Hesabım-->
         <scene sceneID="J78-yu-Vum">
@@ -253,7 +232,7 @@
         <scene sceneID="v6O-DI-gt0">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dde-xy-ouB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Hesabım" id="OPb-Ux-s0U">
+                    <tabBarItem key="tabBarItem" title="Hesabım" image="person" catalog="system" id="OPb-Ux-s0U">
                         <imageReference key="selectedImage" image="person" catalog="system" symbolScale="large"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -274,7 +253,7 @@
         <scene sceneID="8xg-ys-zmh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pzp-pa-A0J" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Ana Sayfa" selectedImage="house.fill" catalog="system" id="c3y-iH-tts"/>
+                    <tabBarItem key="tabBarItem" title="Ana Sayfa" image="house" catalog="system" selectedImage="house.fill" id="c3y-iH-tts"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="SW0-4G-ebp">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -289,11 +268,32 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="-621.42857142857144"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="sd5-9I-jay">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="gu2-O5-XXr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="F3b-gG-NNX">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="systemOrangeColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="mUU-xx-ean" kind="relationship" relationship="viewControllers" id="rWc-f4-Zyi"/>
+                        <segue destination="pzp-pa-A0J" kind="relationship" relationship="viewControllers" id="4dV-DZ-WGX"/>
+                        <segue destination="dde-xy-ouB" kind="relationship" relationship="viewControllers" id="ODV-8B-qpq"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q91-Zu-lmU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-148" y="71"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="house" catalog="system" width="128" height="106"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
-        <image name="pencil.slash" catalog="system" width="128" height="113"/>
         <image name="person" catalog="system" width="128" height="117"/>
+        <image name="trendyolGoBg" width="51" height="37"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
